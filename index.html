@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+
+<body>
+    <div id="container">
+        <!--top-->
+        <div class="control">
+            <div class="time">
+                <span class="min">01</span>:<span class="sec">00</span>
+            </div>
+            <div class="buttons">
+                <button id="btnStart">Start game!</button>
+                <button id="btnCheckGame" class="button-disabled" disabled>Check result</button>
+                <button id="btnNewGame">New game</button>
+            </div>
+        </div>
+        <!--screens with pieces, puzzle and image-->
+        <div class="game">
+            <div id="pieceContainer" class="sort"></div>
+            <div id="puzzleContainer" class="sort"></div>
+            <div id="image"></div>
+        </div>
+    </div>
+    <!--modal-alert-->
+    <div class="modal-container">
+        <div class="modal-alert hide">
+            <div id="alert-time">
+                <p class="border-alert"></p>
+                <div class="time">
+                    <span class="min">01</span>:<span class="sec">00</span>
+                </div>
+            </div>
+            <div class="accept">
+                <button id="btnClose">Close</button>
+                <button id="btnCheck">Check</button>
+            </div>
+        </div>
+    </div>
+    <!--jquery-->
+    <script src="jQuery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <!--javascript-->
+    <script src="script.js"></script>
+</body>
+
+</html>

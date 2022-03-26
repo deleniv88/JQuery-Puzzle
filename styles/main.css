@@ -1,0 +1,169 @@
+@import url('./reset.css');
+
+#container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+/*start top*/
+.control{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;
+}
+.time{
+    font-size: 80px;
+    font-family: monospace;
+    height: 80px;
+    line-height: 80px;
+}
+.buttons{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    width: 350px;
+    height: 30px;
+}
+button{
+    height: 30px;
+    width: 100px;
+    background-color: indianred;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+}
+.button-disabled{
+    background-color: rgb(219, 133, 133);
+}
+/*end top*/
+/*start screens pieces, puzzle, image*/
+.game{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; 
+}
+#puzzleContainer{
+   width: 405px;
+   height: 405px;
+   margin: 5px;
+   border: 2px solid gray;
+   border-radius: 5px;
+   background-color: lightgray;
+   box-shadow: 0px 0px 30px gray;
+   position: relative;
+   margin-right: 35px;
+   z-index: 0;
+}
+#pieceContainer{
+   width: 405px;
+   height: 405px;
+   border: 2px solid gray;
+   border-radius: 5px;
+   background-color: lightgray;
+   box-shadow: 0px 0px 30px gray;
+   position: relative;
+   margin-right: 35px;
+   position: relative;
+   z-index: 1;
+}
+#image{
+    width: 400px;
+    height: 400px;
+    background-image: url('../images/dog_and_child.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 5px;
+    border: 2px solid gray;
+    border-radius: 5px;
+    background-color: lightgray;
+    box-shadow: 0px 0px 15px gray;
+}
+.piece{
+    width: 100px;
+    height: 100px;
+    float: left;
+    background-image: url('../images/dog_and_child.jpg');
+    background-repeat: no-repeat;
+}
+/*end screen pieces, puzzle, image*/
+/*start modal-alert*/
+.modal-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+}
+.modal-alert{
+    width: 800px;
+    height: 250px;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 10px;
+    position: absolute;
+    top: 15px;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    font-family: monospace;
+}
+.border-alert{
+    padding: 30px;
+}
+#alert-time{
+    width: 800px;
+    border-top: 2px solid gray;
+    border-bottom: 2px solid gray;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+.accept{
+    margin-top: 40px;
+}
+#btnClose, #btnCheck{
+    width: 80px;
+    height: 40px;
+}
+#btnClose{
+    background-color: rgb(182, 69, 69);
+}
+#btnClose:hover{
+    background-color: brown;
+    box-shadow: 0px 0px 10px brown;
+}
+#btnCheck{
+    background-color: rgb(19, 128, 19);
+}
+#btnCheck:hover{
+    background-color: darkgreen;
+    box-shadow: 0px 0px 10px darkgreen;
+}
+/*end modal-alert*/
+.hide{
+    display: none;
+}
+.show{
+    display: flex;
+}
+
+
